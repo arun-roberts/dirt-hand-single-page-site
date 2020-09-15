@@ -1,0 +1,273 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+  font-family: 'VT323', monospace;
+  font-size: 1.2rem;
+}
+
+h1, h2, h3, li, button {
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+h1, li {
+  display: inline-block;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  position: relative;
+  cursor: pointer;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-color: black;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+button:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.site-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.nav {
+  position: relative;
+  right: 0;
+  left: 0;
+  top: 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 4rem;
+  z-index: 2;
+}
+
+.nav__heading {
+  position: absolute;
+  font-size: 1.5rem;
+  left: 1rem;
+}
+
+.nav-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
+}
+
+.nav-menu__button {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.nav-menu__button::after {
+  height: 0.1rem;
+}
+
+.nav-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 24%;
+  text-align: right;
+}
+
+.nav-icon__img {
+  width: 6rem;
+}
+
+.container {
+  padding: 1rem;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.who {
+  opacity: 0;
+  z-index: 0;
+}
+
+.who-item {
+  width: 70%;
+}
+
+.choose {
+  opacity: 0;
+  z-index: 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.choose-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 60%;
+}
+
+.choose-menu__button {
+  font-size: 5rem;
+}
+
+.choose-menu__button::after {
+  height: 0.2rem;
+}
+
+.what {
+  opacity: 0;
+  z-index: 0;
+}
+
+.what-listen {
+  opacity: 0;
+  z-index: 0;
+  display: none;
+}
+
+.what-listen__bandcamp {
+  margin: 1rem;
+  border: 0;
+  width: 350px;
+  height: 470px;
+}
+
+.what-read {
+  opacity: 0;
+  z-index: 0;
+  margin-top: 2rem;
+}
+
+.what-watch {
+  opacity: 0;
+  z-index: 0;
+}
+
+.what-watch__youtube {
+  border: none;
+}
+
+.read-item {
+  width: 28%;
+  margin: 0 0.2rem;
+}
+
+.read-item__heading {
+  position: -webkit-sticky;
+  position: sticky;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.album {
+  overflow: scroll;
+  height: 60vh;
+  padding: 1px;
+  border: 1px solid black;
+}
+
+.song {
+  margin: 0.5rem 0;
+}
+
+.song__title {
+  margin-bottom: 0.5rem;
+}
+
+.song__p {
+  margin-bottom: 1rem;
+}
+
+.when {
+  opacity: 0;
+  z-index: 0;
+}
+
+.welcome {
+  z-index: 2;
+  background-color: white;
+}
+
+#welcome {
+  font-size: 5rem;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  90% {
+    width: 850px;
+    height: 850px;
+  }
+  100% {
+    width: 800px;
+    height: 800px;
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  90% {
+    width: 850px;
+    height: 850px;
+  }
+  100% {
+    width: 800px;
+    height: 800px;
+  }
+}
+/*# sourceMappingURL=app.css.map */
